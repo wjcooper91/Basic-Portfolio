@@ -1,28 +1,36 @@
 body {
-    background-color:#EEE;
+    background-color:#777;
     width:100%;
+    display:flex;
+    justify-content:center;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-div {
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: relative;
-    padding:30px;
-  }
+header {
+  width:100%;
+  display: inline-flex;
+  justify-content: space-between;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+}
 
-  div::after {
-    content: "";
-    background: url("/Users/williamcooper/bootcamp/Basic-Portfolio/images/atl_skyline.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    opacity: 0.3;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
-  }
+.container {
+  max-width:960px;
+  width:100%;
+  background-color:#fff;
+}
+
+.name {
+  padding:30px;
+  background-color: #4aaaa5;
+  color:#fff;
+  font-size:20px;
+}
+
+.nav {
+  display:inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #777777;
+  font-size:16px;
+  width:25%;
+}
